@@ -1,0 +1,230 @@
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background: rgba(51, 51, 51);
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  height: 50px;
+  z-index: 9987;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  color: rgb(214, 214, 214);
+}
+
+li {
+  display: inline-block;
+  color: rgb(214, 214, 214);
+  padding: 0px 20px;
+}
+
+a {
+  color: rgb(214, 214, 214);
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+/* Home Section */
+
+#home {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(249, 249, 249);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#titleLeft {
+  
+  text-align: center;
+}
+
+#titleLeft h1 {
+  padding-top: 180px;
+  font-size: 5vw;
+}
+
+#titleLeft h2 {
+  padding-top: 50px;
+  font-size: 2vw;
+}
+
+#home p {
+  text-align: right;
+  padding-right: 50px;
+}
+
+
+#titleRight {
+  display: block;
+  margin-left: auto;
+}
+
+
+/* Portfolio Section */
+
+#apps {
+  background-color: rgb(249, 249, 249);
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+#apps h1 {
+  font-size: 3vw;
+}
+
+.app {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.icon {
+  max-height: 60px;
+}
+
+.appElement {
+  padding-top: 20px;
+}
+
+.appElement p {
+  size: small;
+}
+
+.viewAllButton {
+  padding-top: 30px;
+}
+
+/* Page splitter section */
+
+.pageSplitter {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3vw;
+}
+
+/* Bio section */
+
+#bio {
+  
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.bioSection {
+  background-color: rgb(214, 214, 214);
+  margin: 10px;
+  border: 1px solid red;
+  display: inline-block;
+}
+
+#summary {
+  float: left;
+  width: 30%;
+}
+
+#myStory {
+  width: 65%;
+}
+
+
+
+/* Certifications section */
+
+#skillsAndCertifications {
+  
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.certification {
+  max-height: 400px;
+  /* I want borders of some sort around these */
+}
+
+.container {
+  background-color: rgb(214, 214, 214);
+  display: flex;
+  width: 100%;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.box > img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.box > span {
+  font-size: 2.5vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box > img:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Contact section */
+
+#contact {
+  background-color: rgb(214, 214, 214);
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Links section */
+
+#links {
+  background-color: rgb(214, 214, 214);
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Resume section */
+
+#resume {
+  background-color: rgb(214, 214, 214);
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.containerExplainer {
+  color: red;
+  text-align: left;
+}
