@@ -2,38 +2,62 @@ body {
   font-family: sans-serif;
 }
 
-nav {
+a {
+  color: rgb(43, 99, 215);
+  text-decoration: none;
+}
+
+/* Nav section */
+
+header {
   background: rgba(51, 51, 51);
   padding: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  text-align: center;
-  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: right;
+  height: 60px;
   z-index: 9987;
   width: 100%;
-  position: relative;
+  position:fixed ;
   overflow: hidden;
   display: block;
+}
 
-  color: rgb(214, 214, 214);
+header p {
+  color: white;
+  margin-left: 20px;
+  float: left;
+}
+
+
+
+ul {
+  padding-left: 0px;
 }
 
 li {
   display: inline-block;
-  color: rgb(214, 214, 214);
+  color: rgb(249, 249, 249);
   padding: 0px 20px;
 }
 
-a {
-  color: rgb(214, 214, 214);
+nav a {
+  color: rgb(249, 249, 249);
   text-decoration: none;
 }
 
 a:hover {
   font-weight: bold;
+  text-decoration: underline;
 }
 
+
 /* Home Section */
+
+#intro {
+  background-color: black;
+}
 
 #home {
   background-color: black;
@@ -43,6 +67,30 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+}
+
+#badges {
+  padding-left: 60px;
+  padding-bottom: 50px;
+  background-color: black;
+}
+
+#badges img {
+  max-height: 120px;
+  
+}
+
+.badgeGroups {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#languages {
+  margin-left: 80px;
+}
+
+#languages li {
+  align-items: center;
 }
 
 #titleLeft {
@@ -56,7 +104,8 @@ a:hover {
 }
 
 #titleLeft h2 {
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-left: 160px;
   font-size: 2vw;
 }
 
@@ -70,24 +119,40 @@ a:hover {
   margin-left: auto;
 }
 
+#titleImage {
+  min-width: 900px;
+  max-width: 1000px;
+}
+
 /* Portfolio Section */
 
-#apps {
+#apps, #websites {
   background-color: rgb(249, 249, 249);
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 2rem 2rem;
   text-align: center;
 }
 
-#apps h1 {
+#apps h1, #websites h1 {
   font-size: 3vw;
+}
+
+#apps h2, #websites h2 {
+  padding-bottom: 1em;
 }
 
 .app {
   display: inline-block;
-  border: 1px solid red;
-  padding: 1rem 1rem;
+  /* border: 1px solid red; */
+  padding: 1rem 2.5rem;
   vertical-align: middle;
+  min-width: 100px;
+  max-width: 400px;
+  vertical-align: top;
+}
+
+.app h3 {
+  font-size: 1.7em;
 }
 
 .icon {
@@ -106,7 +171,45 @@ a:hover {
   padding-top: 30px;
 }
 
-/* Page splitter section */
+.app img {
+  max-width: 320px;
+}
+
+.wrapper {
+  background-color: rgb(249, 249, 249);
+}
+
+.wrapper .radio_tabs {
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 18px;
+  text-align: center;
+}
+
+.wrapper .radio_tabs label {
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.wrapper .radio_tabs label .input:checked ~ .radio_mark {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.wrapper .radio_tabs label .input {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+
+
+/* END portfolio section */
+
+/* START splitter section */
 
 .pageSplitter {
   text-align: center;
@@ -114,51 +217,70 @@ a:hover {
   font-size: 3vw;
 }
 
+/* END splitter section */
+
 /* Bio section */
 
 #bio {
-  border: 1px solid black;
-  padding: 2rem 2rem;
+  /* border: 1px solid black; */
+  padding: 1rem 1rem;
   text-align: center;
+  height: fit-content;
 }
 
 .bioSection {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(249, 249, 249);
   margin: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: inline-block;
+}
+
+.bioSection p {
+  font-size: large;
 }
 
 .elevatorPitch {
   padding: 2em;
+  margin: 2em;
 }
 
 #summary {
   float: left;
-  width: 35%;
+  width: 30%;
 }
 
 #links {
-  background-color: rgb(214, 214, 214);
-  border: 1px solid black;
-  margin: 1rem;
+  background-color: rgb(249, 249, 249);
+  /* border: 1px solid black; */
+  margin: 1.5rem;
   padding: 2rem 2rem;
   text-align: center;
 }
 
 #links a {
   color: rgb(43, 99, 215);
+  font-size: larger;
 }
+
+#myStory img {
+  margin: 50px;
+}
+
+.carousel-caption {
+  background-color: black;
+  opacity: 85%;
+}
+
 
 /* Contact section */
 
 #contact {
-  background-color: rgb(214, 214, 214);
-  border: 1px solid black;
+  background-color: rgb(249, 249, 249);
+  /* border: 1px solid black; */
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
-  
+  font-size: larger;
 }
 
 /* My Story Section */
@@ -167,62 +289,95 @@ a:hover {
   width: 60%;
 }
 
-/* Certifications section */
-
-#skillsAndCertifications {
-  border: 1px solid black;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-
-.certification {
-  max-height: 400px;
-  /* I want borders of some sort around these */
-}
-
-.container {
-  background-color: rgb(214, 214, 214);
-  display: flex;
-  width: 100%;
-  padding: 2rem 2rem;
-  box-sizing: border-box;
-  border: 1px solid red;
-}
-
-.box > img {
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.box > span {
-  font-size: 2.5vh;
-  display: block;
-  text-align: center;
-  height: 10vh;
-  line-height: 2.6;
-}
-
-.box > img:hover {
-  transform: scale(
-    1.5
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 /* Resume section */
 
 #resume {
-  background-color: rgb(214, 214, 214);
-  border: 1px solid black;
-  margin: 1rem;
+  background-color: rgb(51, 51, 51);
+  /* border: 1px solid black; */
   padding: 2rem 2rem;
   text-align: center;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  color: white;
+  display: flex;
+  width: 100%;
 }
 
-.containerExplainer {
-  color: red;
-  text-align: left;
+button {
+  max-width: 100px;
+}
+
+/* Certifications section */
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gallery p {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  background-color: rgb(249, 249, 249);
+  padding: 40px;
+}
+
+.gallery img{
+  background-color: #fff;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  border: solid 2px #000;
+}
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
+/* Footer Section */
+
+footer {
+  background: rgba(51, 51, 51);
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  z-index: 9987;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  color: white;
+}
+
+footer h3 {
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.footerSection {
+  display: inline-block;
+  max-width: 35%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
