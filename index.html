@@ -13,14 +13,12 @@
       $(document).ready(function () {
         $(".content .radio_content").hide();
         $(".content .radio_content:first-child").show();
-        $(".radio_wrap").click(function() {
+        $(".radio_wrap").click(function () {
           var current_radio = $(this).attr("data-radio");
           $(".content .radio_content").hide();
           $("." + current_radio).show();
         });
       });
-
-
     </script>
 
     <!-- Global styles BEGIN -->
@@ -36,15 +34,15 @@
   <body>
     <header>
       <nav>
-        <p>Danny Pellatt</p>
+        <p>Danny Pellatt - Portfolio Website</p>
         <ul>
           <li><a href="#intro">Home</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#aboutMe">Bio</a></li>
+          <li><a href="#bio">Bio</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#footer">Links</a></li>
-          <li><a href="#fppter">Contact</a></li>          
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -72,7 +70,12 @@
         <section id="badges">
           <ul>
             <div id="languages" class="badgeGroups">
+              
+              <li>
+                <img src="images/badges/badge.NETCoreB&W.png" alt="HTML5" />
+              </li>
               <li><img src="images/badges/badgeCSharpB&W.png" alt="C#" /></li>
+              <li><img src="images/badges/badgeMySQLB&W.png" alt="HTML5" /></li>
               <li>
                 <img src="images/badges/badgePythonB&W.png" alt="Python" />
               </li>
@@ -82,600 +85,852 @@
               <li><img src="images/badges/badgeCSSB&W.png" alt="HTML5" /></li>
               <li><img src="images/badges/badgeJSB&W.png" alt="HTML5" /></li>
             </div>
-            <div id="tools" class="badgeGroups">
-              <li><img src="images/badges/badgeMySQLB&W.png" alt="HTML5" /></li>
-              <li>
-                <img src="images/badges/badge.NETCoreB&W.png" alt="HTML5" />
-              </li>
-              <li>
-                <img src="images/badges/badgeXamarinB&W.png" alt="HTML5" />
-              </li>
-            </div>
           </ul>
         </section>
       </section>
 
       <section id="projects">
-        <div class="wrapper">
-          <div class="radio_tabs">
-            <label class="radio_wrap" data-radio="radio_1">
-              <input type="radio" name="Projects" class="input" />
-              <span class="radio_mark"> ASP .NET Core MVC Applications </span>
-            </label>
-            <label class="radio_wrap" data-radio="radio_2">
-              <input type="radio" name="Projects" class="input" />
-              <span class="radio_mark"> Websites </span>
-            </label>
-            <label class="radio_wrap" data-radio="radio_3">
-              <input type="radio" name="Projects" class="input" />
-              <span class="radio_mark"> Games </span>
-            </label>
+
+
+
+        <div id="myRadioGroup">
+          <div class="wrapper">
+            <h2>Please choose a portfolio project to view:</h2>
+            <ul class="radio_tabs">
+              <li>
+                <label class="radio_mark"><h4>ASP .NET Core MVC Web Application</h4><p class="app-name">Cross The Pond</p><p class="app-tech">.NET Core, C#, MySQL, HTML, CSS, JavaScript, APIs</p><input type="radio" name="projects" checked="checked" value="1"  /></label>
+              </li>
+              <li>
+                <label class="radio_mark"><h4>ASP .NET Core MVC Web Application</h4><p class="app-name">Swanson Goes West</p><p class="app-tech">.NET Core, C#, JSON, HTML, CSS, JavaScript, APIs</p><input type="radio" name="projects" value="2" /></label>
+              </li>
+              <li>
+                <label class="radio_mark"><h4>ASP .NET Core MVC CRUD Database</h4><p class="app-name">BestBuy</p><p class="app-tech">.NET Core MVC, C#, MySQL, CRUD, Github</p><input type="radio" name="projects" value="3" /></label>
+              </li>
+              <li>
+                <label class="radio_mark"><h4>Personal Development Portfolio Website</h4><p class="app-name">www.dannypellatt.com</p><p class="app-tech">HTML, CSS, JavaScript, Jquery, Bootstrap</p><input type="radio" name="projects" value="4" /></label>
+              </li>               
+            </ul>
           </div>
 
-        <div class="content">
-          <div class="radio_content radio_1" id="apps">
-          
-            <div class="app" id="westAndSwanson">
-              <div id="appImageElement">
-                <img
-                  src="images/apps/laptopWithWestSwanson.png"
-                  alt="Github view of app"
-                />
-              </div>
-  
-              <div class="appElement">
-                <p>C# .NETCore App</p>
-                <h3>West & Swanson</h3>
-              </div>
-  
-              <div class="appElement">
-                <a href="https://github.com/dannypellatt/West-Swanson"
-                  >Learn More</a
-                >
-                <!-- some sort of gray line below -->
-                <p>__________________</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>C#</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeCSharpB&W.png"
-                  alt="C# Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>ASP .NET Core MVC</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badge.NETCoreB&W.png"
-                  alt=".NetCore Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Microsoft Visual Studio</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconVisualStudio.jpeg"
-                  alt="MySQL Icon"
-                />
-                <br><br>
-              </div>
 
-              <div class="appElement">
-                <h3>JSON</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconJSON.jpeg"
-                  alt="JSON Icon"
-                />
+          <div id="Project1" class="desc">
+            <div class="overview">
+              <div class="overview-left">
+                <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+              </div>
+              
+              <div class="overview_right">
                 <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Swanson Array API</h3>
-                <p>Obtained quotes from Ron Swanson as JSON Arrays</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>Kanye West API</h3>
-                <p>Obtained quotes from Kanye West as JSON Objects</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>Simulated Conversation</h3>
-                <p>
-                  Used a for loop to create a random conversation generator
-                  between the two
-                </p>
-              </div>
-  
-              <div class="appElement">
-                <img
-                  class="icon"
-                  src="images/icons/iconGithub.jpg"
-                  alt="Github icon"
-                />
-  
-                <p>
-                  <a href="https://github.com/dannypellatt/West-Swanson"
-                    >Github</a
-                  >
-                </p>
-              </div>
-            </div>
-  
-            <div class="app" id="tacoParser">
-              <div id="appImageElement">
-                <img
-                  src="images/apps/laptopWithWestSwanson.png"
-                  alt="Homescreen of app"
-                />
-              </div>
-  
-              <div class="appElement">
-                <p>C# .Net Core App</p>
-                <h3>Taco Parser</h3>
-              </div>
-  
-              <div class="appElement">
-                <a href="">Learn More</a>
-                <!-- some sort of gray line below -->
-                <p>__________________</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>C#</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeCSharpB&W.png"
-                  alt="C# Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>ASP .NET Core MVC</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badge.NETCoreB&W.png"
-                  alt=".NetCore Icon"
-                />
-                <br><br>
-              </div>
-  
-  
-              <div class="appElement">
-                <h3>Microsoft Visual Studio</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconVisualStudio.jpeg"
-                  alt="MySQL Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>xUnit</h3>
-                <p>Created new attributes to control test</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>Data Parsing</h3>
-                <p>Parsed data from csv file referencing Taco Bell locations</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>Geolocator</h3>
-                <p>
-                  Used to find the locations that are furthest apart showing the
-                  names and the distance between them
-                </p>
-              </div>
-  
-              <div class="appElement">
-                <h3>Teamwork</h3>
-                <p>Worked together scrum style with three other developers</p>
-              </div>
-  
-              <div class="appElement">
-                <img
-                  class="icon"
-                  src="images/icons/iconGithub.jpg"
-                  alt="Github icon"
-                />
-                <p>Github</p>
-              </div>
-            </div>
-  
-            <div class="app" id="bestBuyCRUD">
-              <div id="appImageElement">
-                <img
-                  src="images/apps/laptopWithWestSwanson.png"
-                  alt="Github view of app"
-                />
-              </div>
-  
-              <div class="appElement">
-                <p>C# .NETCore App</p>
-                <h3>CRUD BestBuy Database</h3>
-              </div>
-  
-              <div class="appElement">
-                <a href="https://github.com/dannypellatt/West-Swanson"
-                  >Learn More</a
-                >
-                <!-- some sort of gray line below -->
-                <p>__________________</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>C#</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeCSharpB&W.png"
-                  alt="C# Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>ASP .NET Core MVC</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badge.NETCoreB&W.png"
-                  alt=".NetCore Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Microsoft Visual Studio</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconVisualStudio.jpeg"
-                  alt="MySQL Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>MySQL</h3>
-                <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="MySQL" />
+    
+                <div class="overview-point">
+                  <h2>ASP .NET Core MVC Web App - Cross The Pond</h2>
+                  <p>&emsp;&emsp;A multifunctional travel application aiding visits 
+                    to Britain for Americans and America for the British.  Made using these tools:</p>
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>ASP .NET Core MVC</h3>
+                    <p>Implements various methods, controllers and views.</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>C#</h3>
+                    <p>Called APIs, MySQL data & wrote calculator functions with C#</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeMySQLB&W.png" alt="HTML Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>MySQL</h3>
+                    <p>Built & manipulated a database using SQL on the back end.</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeHTMLB&W.png" alt="MySQL Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>HTML, CSS, JavaScript</h3>
+                    <p>Used for front end functionality and layout.</p>
+                  </div>          
+                </div>          
                 
               </div>
-  
+            </div>
 
+            <div class="radio_content radio_1" id="apps">
+              <div class="app" id="westAndSwanson">
+                <div id="appImageElement">
+                  <img src="images/apps/CtP-Words.png" alt="Translator page" />
+                </div>
   
-              <div class="appElement">
-                <img
-                  class="icon"
-                  src="images/icons/iconGithub.jpg"
-                  alt="Github icon"
-                />
+                <div class="appElement"><br>
+                  <h3>Translator</h3>
+                  <p></p>
+                </div>
   
-                <p>
-                  <a href="https://github.com/dannypellatt/West-Swanson"
-                    >Github</a
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
                   >
-                </p>
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="radio_content radio_2" id="websites">
-                      
-            <div class="app" id="portfolio">
-              <div id="appImageElement">
-                <img
-                  src="images/apps/laptopWithWestSwanson.png"
-                  alt="Github view of app"
-                />
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="MySQL Icon" />
+                  <p>Built & manipulated database using MySQL on the back end.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Within .NET MVC, different views created to display data alphabetically with an MVC controller. Inheritance used to optimize data.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>Used C# functions within repository to create different displayable lists from IEnumerables, as well as within the model to fetch columns.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badgeHTMLB&W.png"
+                    alt="HTML & CSS used to display "
+                  />
+                  <p>HTML & CSS displays tables in an easily navigable and visually appealing way.</p>
+                  <br />
+                </div>
+  
               </div>
   
-              <div class="appElement">
-                <p>Website</p>
-                <h3>My Portfolio</h3>
+              <div class="app" id="tacoParser">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/CtP-Weather.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Weather API</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <h3>OpenWeather API</h3>
+                  <p>Called two different APIs to display current temperature and weather in a chosen US, or UK city.</p>
+                  <br>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Different views created to display US or UK options. Controller called one of two APIs, dependant on user destination, with the model showing only relevant information.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>Used classes in models depending on direction alongside if statements within controller to check if input is valid, then call correct API. </p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badgeHTMLB&W.png"
+                    alt="HTML & CSS used to display "
+                  />
+                  <p>HTML and CSS displays results in an easily navigable and visually appealing way.</p>
+                  <br />
+                </div>
+  
               </div>
   
-              <div class="appElement">
-                <a href="https://github.com/dannypellatt/West-Swanson"
-                  >Learn More</a
-                >
-                <!-- some sort of gray line below -->
-                <p>__________________</p>
+              <div class="app" id="bestBuyCRUD">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/CtP-Temp.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Temperature Converter</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <h3>Calculator</h3>
+                  <p>Two different functions depending on destination, both with if statements returning either F or C.</p>
+                  <br>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Within .NET MVC, different views for each destination. Model used for user input, buttons and output and the controller used to house the calculations.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>Used C# to correctly convert Fahrenheit to Celcius and vice versa, returning rounded answer with LINQ.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badgeHTMLB&W.png"
+                    alt="HTML & CSS used to display "
+                  />
+                  <p>HTML & CSS displays results in an easily navigable and visually appealing way.</p>
+                  <br />
+                  </div>
               </div>
   
-              <div class="appElement">
-                <h3>HTML5</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeHTML5.png"
-                  alt="C# Icon"
-                />
-                <br><br>
-              </div>
+              <div class="app" id="tacoParser">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/CtP-Tipping.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
   
-              <div class="appElement">
-                <h3>CSS</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeCSS.png"
-                  alt=".NetCore Icon"
-                />
-                <br><br>
-              </div>
+                <div class="appElement"><br>
+                  <h3>Tipping Calculator</h3>
+                  <p></p>
+                </div>
   
-              <div class="appElement">
-                <h3>Javascript</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeJS.png"
-                  alt="Javascript Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Microsoft Visual Studio</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconVisualStudioCode.png"
-                  alt="Microsoft Visual Studio Code Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Optimized for desktop</h3>
-                <p>
-                    Made with user intent in mind
-                </p>
-            </div>
-
-            <div class="appElement">
-              <h3>Well designed and functional</h3>
-              <p>The site is designed to showcase development skills in a visually appealing way</p>
-              </div>
-  
-              <div class="appElement">
-              <h3>Thoughtful UX</h3>
-              <p>Obvious, logical navigation with clear hierarchy. 
-                  Consistent layouts and visual cues for functionality
-              </p>
-              </div>
-  
-              <div class="appElement">
-                  <h3>Quality Content</h3>
-                  <p>
-                      Succinct and interesting. spell checked, accurate and relevant
-                  </p>
-              </div>
-
-            <div class="appElement">
-                <h3>Accessibility minded</h3>
-                <p>
-                    Correct headings, image alt text, descriptive links and dynamic content.
-                    Careful use of colors and fonts to accomodate for different abilities.
-                    Consistent, simple navigation
-                </p>
-            </div>
-
-            <div class="appElement">
-              <h3>Variety of libraries</h3>
-              <p>
-                  Bootstrap, Jquery, FA Icons
-              </p>
-          </div>
-
-            </div>
-  
-            <div class="app" id="croftonMusic">
-              <div id="appImageElement">
-                <img
-                  src="images/apps/laptopWithWestSwanson.png"
-                  alt="Homescreen of app"
-                />
-              </div>
-  
-              <div class="appElement">
-                <p>Website</p>
-                <h3>Crofton Music</h3>
-              </div>
-  
-              <div class="appElement">
-                <a href="">Learn More</a>
-                <!-- some sort of gray line below -->
-                <p>__________________</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>HTML5</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeHTML5.png"
-                  alt="C# Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>CSS</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeCSS.png"
-                  alt=".NetCore Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Javascript</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeJS.png"
-                  alt="Javascript Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Microsoft Visual Studio</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconVisualStudioCode.png"
-                  alt="Microsoft Visual Studio Code Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Well designed and functional</h3>
-                <p>The site reflects the brand in a visually appealing, polished and professional way</p>
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
                 </div>
 
                 <div class="appElement">
-                <h3>Thoughtful UX</h3>
-                <p>Obvious, logical navigation with clear hierarchy. 
-                    Consistent layouts and visual cues for functionality
-                </p>
+                  <h3>Calculator</h3>
+                  <p>Two different functions depending on destination, returning tip amount and total check.</p>
+                  <br>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Two different views created to display UK and US information and calculator. Used the model and the controller to return the tip amount and result dependant on user input.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>Created two classes inheriting from same model and repository with if statements returning answers from two nested calculations.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badgeHTMLB&W.png"
+                    alt="HTML & CSS used to display "
+                  />
+                  <p>HTML & CSS displays results in an easily navigable and visually appealing way.</p>
+                  <br />
+                  </div>
+              </div>
+  
+              </div>
+            </div>
+          </div>
+
+          <div id="Project2" class="desc" style="display: none;">
+            <div class="overview">
+              <div class="overview-left">
+                <img src="images/apps/ronGoesWest.png" alt="Github view of app" />
+              </div>
+              
+              <div class="overview_right">
+                <br><br>
+    
+                <div class="overview-point">
+                  <h2>ASP .NET Core MVC Web App - Swanson Goes West</h2>
+                  <p>&emsp;&emsp;Program simulates a conversation, randomly quoting Kanye West and Ron Swanson with APIs. Made using these tools:</p>
+                    
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>ASP .NET Core MVC</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsa exercitationem tempora sapiente?</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>C#</h3>
+                    <p>Called APIs, MySQL data & wrote calculator functions using C#</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/icons/iconJSON.jpeg" alt="HTML Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>JSON</h3>
+                    <p>Used Newtonsoft.JSON package to parse both JSON object, and array, into strings.</p>
+                  </div>          
+                </div>
+       
+                
+              </div>
+            </div>
+
+            <div class="radio_content radio_1" id="apps">
+              <div class="app" id="westAndSwanson">
+                <div id="appImageElement">
+                  <img src="images/apps/ronAPI.png" alt="Translator page" />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Ron Swanson API</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
                 </div>
 
                 <div class="appElement">
-                    <h3>Quality Content</h3>
-                    <p>
-                        Succinct and interesting. spell checked, accurate and relevant
-                    </p>
+                  <h3>Github</h3>
+                  <p>Found API on Github then called from app</p>
+                  <br>
+                </div>
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>called the API with C#, as well as loop through and display parsed quote. 
+                    I also put a delay in order to simulate the time it would take to type.</p>
+                  <br />
+                </div>
+
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/icons/iconJSON.jpeg" alt="C# Icon"
+                  />
+                  <p>Used Newtonsoft.JSON package to parse JSON object into a string.</p>
+                  <br />
+                </div>
+  
+              </div>
+  
+              <div class="app" id="tacoParser">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/kanyeAPI.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Kanye West API</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <h3>RapidAPI</h3>
+                  <p>Used the popular website to find the API to call from </p>
+                  <br>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>called the API with C#, as well as loop through and display parsed quote. 
+                    I also put a delay in order to simulate the time it would take to type.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/icons/iconJSON.jpeg" alt="C# Icon"
+                  />
+                  <p>Used Newtonsoft.JSON package to parse JSON object into a string.</p>
+                  <br />
+                </div>
+  
+              </div>
+  
+              <div class="app" id="bestBuyCRUD">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/westswanson.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Swanson Goes West</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Within .NET MVC, different views created to display data alphabetically with an MVC controller. Inheritance used to optimize data.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>Used C# functions within repository to create different displayable lists from IEnumerables, as well as within the model to fetch columns</p>
+                  <br />
+                </div>
+  
+              </div>
+            </div>
+          </div>
+
+          <div id="Project3" class="desc" style="display: none;">
+            <div class="overview">
+              <div class="overview-left">
+                <img src="images/apps/BestBuy-Home.png" alt="Github view of app" />
+              </div>
+              
+              <div class="overview_right">
+                <br><br>
+    
+                <div class="overview-point">
+                  <h2>CRUD Database Application - Best Buy</h2>
+                  <p>&emsp;&emsp;An Application that takes a database of BestBuy products and allows manipulation</p>
+                    <p>&emsp;&emsp;Created using C# in Microsoft Visual Studios Community, allowing manipulation of BestBuy SQL database SQL. Made using these tools:</p>
+                      <br>
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>ASP .NET Core MVC</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsa exercitationem tempora sapiente?</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>C#</h3>
+                    <p>Uses IoC container to handle the newing up of objects, taking advantage of dependency injections.</p>
+                  </div>          
+                </div>
+
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeMySQLB&W.png" alt="C# Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>MySQL</h3>
+                    <p>Manipulated database using MySQL on the back end</p>
+                  </div>          
                 </div>
                 
-                <div class="appElement">
-                    <h3>Optimized for mobile</h3>
-                    <p>
-                        Improves both user experience and SEO rankings. 
-                        Responsive Web Design, Tested using Google's Mobile-Friendly Tool
-                    </p>
-                </div>
-
-                <div class="appElement">
-                    <h3>Accessibility Minded</h3>
-                    <p>
-                        Correct headings, image alt text, descriptive links and dynamic content. 
-                    </p>
-                </div>
-
-                <div class="appElement">
-                    <h3>Optimized for search and socials</h3>
-                    <p>
-                        Improves both user experience and SEO rankings
-                    </p>
-                </div>
+              </div>
             </div>
+
+            <div class="radio_content radio_1" id="apps">
+              <div class="app" id="westAndSwanson">
+                <div id="appImageElement">
+                  <img src="images/apps/BestBuy-MySQL.png" alt="Translator page" />
+                </div>
   
-            <div class="app" id="Leigh's Lizard">
-              <div id="appImageElement">
-                <img
-                  src="images/apps/laptopWithWestSwanson.png"
-                  alt="Github view of app"
-                />
-              </div>
+                <div class="appElement"><br>
+                  <h3>SQL Database</h3>
+                  <p></p>
+                </div>
   
-              <div class="appElement">
-                <p>Business Store Website</p>
-                <h3>Leigh's Lizards</h3>
-              </div>
-  
-              <div class="appElement">
-                <a href="https://github.com/dannypellatt/West-Swanson"
-                  >Learn More</a
-                >
-                <!-- some sort of gray line below -->
-                <p>__________________</p>
-              </div>
-  
-              <div class="appElement">
-                <h3>HTML5</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeHTML5.png"
-                  alt="C# Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>CSS</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeCSS.png"
-                  alt=".NetCore Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Javascript</h3>
-                <img
-                  class="icon"
-                  src="images/badges/badgeJS.png"
-                  alt="Javascript Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <h3>Microsoft Visual Studio</h3>
-                <img
-                  class="icon"
-                  src="images/icons/iconVisualStudioCode.png"
-                  alt="Microsoft Visual Studio Code Icon"
-                />
-                <br><br>
-              </div>
-  
-              <div class="appElement">
-                <img
-                  class="icon"
-                  src="images/icons/iconGithub.jpg"
-                  alt="Github icon"
-                />
-  
-                <p>
-                  <a href="https://github.com/dannypellatt/West-Swanson"
-                    >Github</a
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
                   >
-                </p>
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+
+                <div class="appElement">
+                  <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="MySQL Icon" />
+                  <p>Downloaded the BestBuy database into MySQL for back end storage</p>
+                  <br />
+                </div>
+
+                <div class="appElement">
+                  <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="MySQL Icon" />
+                  <p>Uses IoC container to handle the newing up of objects, taking advantage of dependency injections.</p>
+                  <br />
+                </div>
+  
+              </div>
+  
+              <div class="app" id="tacoParser">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/BestBuy-MVSC.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>ASP .NET Core MVC</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Within .NET MVC, Used models, views and controllers to. Inheritance used to optimize data with IProduct Repositories.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>called the API with C#, as well as loop through and display parsed quote. 
+                    I also put a delay in order to simulate the time it would take to type.</p>
+                  <br />
+                </div>
+  
+              </div>
+  
+              <div class="app" id="bestBuyCRUD">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/BestBuy-Github.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Github</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badge.NETCoreB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Within .NET MVC, Used models, views and controllers to. Inheritance used to optimize data with IProduct Repositories.</p>
+                  <br />
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"
+                  />
+                  <p>called the API with C#, as well as loop through and display parsed quote. 
+                    I also put a delay in order to simulate the time it would take to type.</p>
+                  <br />
+                </div>
               </div>
             </div>
-            
           </div>
-          <div class="radio_content radio_3"></div>
-        </div>
-      </section>
 
+          <div id="Project4" class="desc" style="display: none;">
+            <div class="overview">
+              <div class="overview-left">
+                <img src="images/apps/Portfolio-Home.png" alt="Github view of app" />
+              </div>
+              
+              <div class="overview_right">
+                <br><br>
+    
+                <div class="overview-point">
+                  <h2>Personal Portfolio Website</h2>
+                  <p>&emsp;&emsp;A website designed to showcase the projects I have been working for, tell a little about myself, and provide links and contact information for potential employers</p>
+                    <p>&emsp;&emsp;Created using HTML, CSS & Javascript in Microsoft Visual Studios Code. Made the most Bootstrap and JQuery to provide an interesting site . Made using these tools:</p>
+                      <br>
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeHTMLB&W.png" alt=".NetCore Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>HTML</h3>
+                    <p>Used HTML to create the layout of the page, lining to other works. keeping usability in mind</p>
+                  </div>          
+                </div>
+    
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeCSSB&W.png" alt="C# Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>CSS</h3>
+                    <p>Decorated the page using CSS, this includes backgrounds, hover animations, and accessibility</p>
+                  </div>          
+                </div>
 
-      <section class="pageSplitter" id="aboutMe">
-        <h1>About me:</h1>
+                <div class="overview-point overview-point-with-icon"> 
+                  <div class="overview-point-with-icon-section">
+                    <img class="overview-icon" src="images/badges/badgeJSB&W.png" alt="C# Icon"/>
+                  </div>  
+                  <div class="overview-point-with-icon-section overview-point-with-icon-section-right">
+                    <h3>JavaScript</h3>
+                    <p>Created a dynamic web page using Javascript and JQuery functions, allowing a one page</p>
+                  </div>          
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="radio_content radio_1" id="apps">
+              <div class="app" id="westAndSwanson">
+                <div id="appImageElement">
+                  <img src="images/apps/Portfolio-HTML.png" alt="Translator page" />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>HTML & CSS</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+
+                <div class="appElement">
+                  <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="MySQL Icon" />
+                  <p>Downloaded the BestBuy database into MySQL for back end storage</p>
+                  <br />
+                </div>
+
+                <div class="appElement">
+                  <img class="icon" src="images/badges/badgeCSSB&W.png" alt="MySQL Icon" />
+                  <p>Uses IoC container to handle the newing up of objects, taking advantage of dependency injections.</p>
+                  <br />
+                </div>
+  
+              </div>
+  
+              <div class="app" id="tacoParser">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/Portfolio-JS.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Javascript</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <img
+                    class="icon"
+                    src="images/badges/badgeJSB&W.png"
+                    alt=".NetCore Icon"
+                  />
+                  <p>Used JavaScript to create the changing portfolios and automatic slideshow in the bio section. 
+                    This was done to achieve a succinct one-page that still holds a lot of information</p>
+                  <br />
+
+                  <div class="appElement">
+                    <h3>Libraries</h3>
+                    <p>Used Bootstrap and JQuery</p>
+                    <br>
+                  </div>
+                </div>
+  
+
+  
+              </div>
+  
+              <div class="app" id="bestBuyCRUD">
+                <div id="appImageElement">
+                  <img
+                    src="images/apps/BestBuy-Github.png"
+                    alt="Homescreen of app"
+                  />
+                </div>
+  
+                <div class="appElement"><br>
+                  <h3>Version Control</h3>
+                  <p></p>
+                </div>
+  
+                <div class="appElement">
+                  <a href="#"
+                    >Learn More</a
+                  >
+                  <!-- some sort of gray line below -->
+                  <p>__________________</p>
+                </div>
+  
+                <div class="appElement">
+                  <h3>Github</h3>
+                  <p>Called two different APIs to display current temperature in a chosen US city in Celcius, and UK city temperature in Fahrenheit.</p>
+                  <br>
+                </div>
+
+                <div class="appElement">
+                  <h3>Microsoft Visual Studios Code</h3>
+                  <p>Called two different APIs to display current temperature in a chosen US city in Celcius, and UK city temperature in Fahrenheit.</p>
+                  <br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      
       </section>
 
       <section id="bio">
         <div id="summary" class="bioSection">
-          <h1>Bio</h1>
+          <h1>About me:</h1>
           <p class="">
-            Mobile developer specializing in C#, with 2+ years freelance
+            &emsp;&emsp;Full stack developer specializing in C#, with 2+ years freelance
             experience designing, developing, analyzing, and implementing
             client-server, mobile, web, and desktop-based applications. Avid
-            learner excited to pick up new technologies. A confident, friendly
+            learner excited to pick up new technologies.</p>
+            <p> &emsp;&emsp;Demonstrable skill in .NET Core, C#, MySQL, HTML, CSS, JavaScript & Python.
+              Knowledge of Object Oriented Programming, 
+               </p>
+            <p> &emsp;&emsp;A confident, friendly
             and ambitious person with excellent analytical, problem-solving and
-            organizational skills.
+            organizational skills. B.S. in Geology from the University of Plymouth and certification in software development
+            from TrueCoders.
           </p>
+          
           <section id="links">
-            <!-- <h1>Links</h1> -->
-            <ul>
+          <h1>Links & Contact:</h1>
+          <p> &emsp;&emsp;Follow these links to learn more:</p>
+          <ul>
               <li>
                 <a href="https://www.linkedin.com/in/dannypellatt/">LinkedIn</a>
               </li>
@@ -688,19 +943,15 @@
                 >
               </li>
             </ul>
-          </section>
-
-          <section id="contact">
-            <!-- <h1>Contact</h1> -->
-            <p>Phone: 571-493-0142</p>
-            <p>Email: danielpellatt92@gmail.com</p>
+            <p>&emsp;&emsp;Phone: 571-493-0142</p>
+            <p>&emsp;&emsp;Email: danielpellatt92@gmail.com</p>
           </section>
         </div>
 
         <div id="myStory" class="bioSection">
           <div
             id="carouselExampleIndicators"
-            class="carousel slide"
+            class="carousel-slide"
             data-ride="carousel"
           >
             <ol class="carousel-indicators">
@@ -768,32 +1019,7 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+
         </div>
       </section>
 
@@ -818,7 +1044,7 @@
             </div>
             <div class="col">
               <img
-                src="images/certifications/certPlaceholder.jpeg"
+                src="images/certifications/Danny Pellatt TrueCoders Certificate.png"
                 class="gallery-item"
                 alt="gallery"
               />
@@ -836,8 +1062,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="gallery min-vh-50">
         <div class="container-lg">
           <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
             <div class="col">
@@ -873,7 +1097,7 @@
                 class="gallery-item"
                 alt="gallery"
               />
-              <h3>Python for Beginners</h3>
+              <h3>Python</h3>
               <p>SoloLearn</p>
             </div>
           </div>
@@ -914,6 +1138,7 @@
           </div>
         </div>
       </div>
+      </section>
     </main>
 
     <footer class="footer" id="footer">

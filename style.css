@@ -12,11 +12,11 @@ a {
 header {
   background: rgba(51, 51, 51);
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-right: 20px;
   text-align: right;
-  height: 60px;
+  height: 55px;
   z-index: 9987;
   width: 100%;
   position:fixed ;
@@ -39,7 +39,7 @@ ul {
 li {
   display: inline-block;
   color: rgb(249, 249, 249);
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 nav a {
@@ -70,19 +70,18 @@ a:hover {
 }
 
 #badges {
-  padding-left: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   background-color: black;
 }
 
 #badges img {
-  max-height: 120px;
+  max-height: 60px;
   
 }
 
 .badgeGroups {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 #languages {
@@ -98,15 +97,9 @@ a:hover {
 }
 
 #titleLeft h1 {
-  padding-top: 160px;
-  padding-left: 100px;
+  padding-top: 140px;
+  padding-left: 20px;
   font-size: 5vw;
-}
-
-#titleLeft h2 {
-  padding-top: 60px;
-  padding-left: 160px;
-  font-size: 2vw;
 }
 
 #home p {
@@ -119,22 +112,105 @@ a:hover {
   margin-left: auto;
 }
 
+.title h2 {
+  margin-left: 95px;
+  font-size: larger;
+}
+
 #titleImage {
-  min-width: 900px;
-  max-width: 1000px;
+  min-width: 700px;
+  max-width: 800px;
 }
 
 /* Portfolio Section */
 
-#apps, #websites {
-  background-color: rgb(249, 249, 249);
-  /* border: 1px solid black; */
-  padding: 2rem 2rem;
+.radio_tabs {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 18px;
   text-align: center;
+  margin-bottom: 0px;
 }
 
-#apps h1, #websites h1 {
-  font-size: 3vw;
+.radio_mark {
+  text-align: center;
+  color: black;
+  width: 250px;
+  padding: 10px;
+}
+
+.radio_tabs input[type="radio"] {
+ opacity:0.011;
+ z-index:100;
+}
+
+.radio_tabs label {
+  border:3px solid #CCC; 
+  cursor:pointer;
+}
+
+.radio_tabs label:hover {
+  background:#DDD;
+}
+
+.radio_mark h4 {
+  margin: 4px;
+  font-size: large;
+}
+
+.wrapper h2 {
+  margin: 10px;
+}
+
+.overview h2, .overview h3 {
+  font-size: large;
+}
+
+.overview p {
+  font-size: small;
+}
+
+.app-name {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.overview {
+  display: inline-flex;
+  grid-template-columns: auto auto;
+  padding-right: 100px;
+}
+
+.overview-left img {
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+
+}
+.overview-point img {
+  max-width: 50px;
+}
+.overview-point-with-icon-section-right {
+  padding-left: 20px;
+}
+.overview-right {
+  display: block;
+}
+.overview-point-with-icon {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+
+#apps, #websites {
+  background-color: white;
+  /* border: 1px solid black; */
+  text-align: center;
 }
 
 #apps h2, #websites h2 {
@@ -144,88 +220,60 @@ a:hover {
 .app {
   display: inline-block;
   /* border: 1px solid red; */
-  padding: 1rem 2.5rem;
+  padding: 1rem 1rem;
   vertical-align: middle;
   min-width: 100px;
-  max-width: 400px;
+  max-width: 250px;
   vertical-align: top;
 }
 
-.app h3 {
-  font-size: 1.7em;
-}
-
 .icon {
-  max-height: 60px;
+  max-height: 50px;
 }
 
 .appElement {
-  padding-top: 20px;
-}
-
-.appElement p {
-  size: small;
-}
-
-.viewAllButton {
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 .app img {
-  max-width: 320px;
+  max-width: 180px;
 }
+
+.app p, .app h1, .app a {
+  font-size: small;
+}
+
+.app h2, .app h3 {
+  font-size: medium;
+}
+.app h3 {
+  padding-top: 1px;
+  padding-bottom: 2px;
+} 
+
+.app-tech {
+  margin-bottom: 0px;
+  font-size: small;
+}
+
 
 .wrapper {
   background-color: rgb(249, 249, 249);
-}
-
-.wrapper .radio_tabs {
-  height: 40px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  padding: 18px;
-  text-align: center;
-}
-
-.wrapper .radio_tabs label {
-  margin-right: 15px;
-  margin-left: 15px;
-  cursor: pointer;
-}
-
-.wrapper .radio_tabs label .input:checked ~ .radio_mark {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.wrapper .radio_tabs label .input {
-  position: absolute;
-  top: 0;
-  opacity: 0;
+  padding-bottom: 0px;
 }
 
 
 
 /* END portfolio section */
 
-/* START splitter section */
-
-.pageSplitter {
-  text-align: center;
-  padding-top: 50px;
-  font-size: 3vw;
-}
-
-/* END splitter section */
-
-/* Bio section */
+/* START Bio section */
 
 #bio {
   /* border: 1px solid black; */
   padding: 1rem 1rem;
   text-align: center;
   height: fit-content;
+  background-color: rgb(249, 249, 249);
 }
 
 .bioSection {
@@ -235,8 +283,20 @@ a:hover {
   display: inline-block;
 }
 
-.bioSection p {
-  font-size: large;
+.carousel-caption p {
+  font-size: small;
+}
+
+.bioSection h2, .bioSection h1 {
+  font-size: medium;
+}
+
+.carousel-slide h3, .carousel-slide h4 {
+  font-size: medium;
+}
+
+.bioSection p, .bioSection a {
+  font-size: small;
 }
 
 .elevatorPitch {
@@ -246,31 +306,29 @@ a:hover {
 
 #summary {
   float: left;
-  width: 30%;
+  text-align: left;
+  width: 35%;
+  padding-left: 40px;
 }
 
-#links {
-  background-color: rgb(249, 249, 249);
-  /* border: 1px solid black; */
-  margin: 1.5rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-
-#links a {
+#links ul {
   color: rgb(43, 99, 215);
-  font-size: larger;
+  text-align: center;
 }
 
 #myStory img {
   margin: 50px;
+  height: 400px;
 }
 
 .carousel-caption {
   background-color: black;
   opacity: 85%;
+  font-size: small;
 }
-
+.carousel-indicators {
+  opacity: 0%;
+}
 
 /* Contact section */
 
@@ -280,13 +338,13 @@ a:hover {
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
-  font-size: larger;
 }
 
 /* My Story Section */
 
 #myStory {
-  width: 60%;
+  height: 400px;
+  width: 650px;
 }
 
 /* Resume section */
@@ -301,6 +359,10 @@ a:hover {
   color: white;
   display: flex;
   width: 100%;
+}
+#resume h2 {
+  font-size: 30px;
+  margin-left: 30px;
 }
 
 button {
@@ -320,10 +382,6 @@ button {
 
 .gallery p {
   text-align: center;
-}
-
-img {
-  max-width: 100%;
 }
 
 .gallery {
@@ -358,6 +416,7 @@ footer {
   overflow: hidden;
   display: block;
   color: white;
+  font-size: small;
 }
 
 footer h3 {

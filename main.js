@@ -15,3 +15,12 @@ document.addEventListener("click", function (e) {
         myModal.show();
     }
 })
+
+$(document).ready(function() {
+    $("input[name$='projects']").click(function() {
+        var test = $(this).val();
+
+        $("div.desc").hide();
+        $("#Project" + test).show();
+    });
+});
