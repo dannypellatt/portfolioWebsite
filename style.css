@@ -330,6 +330,15 @@ a:hover {
   opacity: 0%;
 }
 
+.project-links {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.project-links a {
+  margin: 20px;
+}
+
 /* Contact section */
 
 #contact {
@@ -401,6 +410,14 @@ button {
 #gallery-modal .modal-img {
   width: 100%;
 }
+
+/* START resume Section */
+
+#resume a {
+  color: black;
+}
+
+/* END resume Section */
 
 /* Footer Section */
 
