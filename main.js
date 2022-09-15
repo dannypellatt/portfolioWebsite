@@ -24,3 +24,16 @@ $(document).ready(function() {
         $("#Project" + test).show();
     });
 });
+
+$(document).ready(function () {
+    $(".content .radio_content").hide();
+    $(".content .radio_content:first-child").show();
+    $(".radio_wrap").click(function () {
+      var current_radio = $(this).attr("data-radio");
+      $(".content .radio_content").hide();
+      $("." + current_radio).show();
+    });
+  });
+
+  
+
